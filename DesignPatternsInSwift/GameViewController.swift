@@ -13,13 +13,13 @@ class GameViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    shapeViewFactory = SquareShapeViewFactory(size: gameView.sizeAvailableForShapes())
+    shapeViewFactory = CircleShapeViewFactory(size: gameView.sizeAvailableForShapes())
     
-    shapeFactory = SquareShapeFactory(minProportion: 0.3, maxProportion: 0.8)
+    shapeFactory = CircleShapeFactory(minProportion: 0.3, maxProportion: 0.8)
     
     beginNextTurn()
   }
-
+                    
   override func prefersStatusBarHidden() -> Bool {
     return true
   }
