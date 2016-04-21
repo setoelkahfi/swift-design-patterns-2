@@ -13,9 +13,13 @@ class GameViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    shapeViewFactory = CircleShapeViewFactory(size: gameView.sizeAvailableForShapes())
+    shapeViewFactory = SquareShapeViewFactory(size: gameView.sizeAvailableForShapes())
     
-    shapeFactory = CircleShapeFactory(minProportion: 0.3, maxProportion: 0.8)
+    shapeFactory = SquareShapeFactory(minProportion: 0.3, maxProportion: 0.8)
+    
+    shapeViewBuilder = ShapeViewBuilder(shapeViewFactory: shapeViewFactory)
+    shapeViewBuilder.fillColor = UIColor.brownColor()
+    shapeViewBuilder.outLine = UIColor.orangeColor()
     
     beginNextTurn()
   }
@@ -50,4 +54,6 @@ class GameViewController: UIViewController {
   private var shapeViewFactory: ShapeViewFactory!
   
   private var shapeFactory: ShapeFactory!
+  
+  private var shapeViewBuilder: ShapeViewBuilder!
 }
