@@ -18,6 +18,8 @@
 		5D23FD2619D23F9B003F5F4E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD2519D23F9B003F5F4E /* Shape.swift */; };
 		6A6728FA19EE21B60026F8C9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6728F919EE21B60026F8C9 /* Utils.swift */; };
 		BD78F7FB1CC8911E00D84077 /* ShapeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78F7FA1CC8911D00D84077 /* ShapeViewBuilder.swift */; };
+		BD78F7FD1CC8DD2C00D84077 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78F7FC1CC8DD2C00D84077 /* Turn.swift */; };
+		BD78F7FF1CC8E09900D84077 /* TurnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78F7FE1CC8E09900D84077 /* TurnController.swift */; };
 		BDC6E29D1CC635280044701C /* ShapeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6E29C1CC635280044701C /* ShapeViewFactory.swift */; };
 		BDC6E29F1CC63DB80044701C /* ShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6E29E1CC63DB80044701C /* ShapeFactory.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		5D23FD2519D23F9B003F5F4E /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		6A6728F919EE21B60026F8C9 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BD78F7FA1CC8911D00D84077 /* ShapeViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeViewBuilder.swift; sourceTree = "<group>"; };
+		BD78F7FC1CC8DD2C00D84077 /* Turn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
+		BD78F7FE1CC8E09900D84077 /* TurnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnController.swift; sourceTree = "<group>"; };
 		BDC6E29C1CC635280044701C /* ShapeViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeViewFactory.swift; sourceTree = "<group>"; };
 		BDC6E29E1CC63DB80044701C /* ShapeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,8 @@
 				5D23FCFF19D21A02003F5F4E /* AppDelegate.swift */,
 				5D23FD1F19D21CB4003F5F4E /* GameView.swift */,
 				5D23FD0119D21A02003F5F4E /* GameViewController.swift */,
+				BD78F7FC1CC8DD2C00D84077 /* Turn.swift */,
+				BD78F7FE1CC8E09900D84077 /* TurnController.swift */,
 				BD78F7FA1CC8911D00D84077 /* ShapeViewBuilder.swift */,
 				BDC6E29E1CC63DB80044701C /* ShapeFactory.swift */,
 				BDC6E29C1CC635280044701C /* ShapeViewFactory.swift */,
@@ -237,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD78F7FD1CC8DD2C00D84077 /* Turn.swift in Sources */,
 				5D23FD2619D23F9B003F5F4E /* Shape.swift in Sources */,
 				5D23FD0219D21A02003F5F4E /* GameViewController.swift in Sources */,
 				5D23FD2019D21CB4003F5F4E /* GameView.swift in Sources */,
@@ -246,6 +253,7 @@
 				5D23FD2419D223C0003F5F4E /* ShapeView.swift in Sources */,
 				BDC6E29F1CC63DB80044701C /* ShapeFactory.swift in Sources */,
 				5D23FD0019D21A02003F5F4E /* AppDelegate.swift in Sources */,
+				BD78F7FF1CC8E09900D84077 /* TurnController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
