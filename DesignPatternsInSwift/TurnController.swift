@@ -16,6 +16,7 @@ class TurnController {
   init(turnStrategy: TurnStrategy) {
     self.turnStrategy = turnStrategy
     self.scorer = MatchScorer()
+    self.scorer.nextScorer = StreakScorer()
   }
   
   func beginNewTurn() -> (ShapeView, ShapeView) {
@@ -28,7 +29,7 @@ class TurnController {
     currentTurn!.turnCompletedWithTappedShape(tappedShape)
     pastTurns.append(currentTurn!)
     
-    var scoreIncrement = scorer.computeScoreIncrement(pastTurns.reverse())
+    let scoreIncrement = scorer.computeScoreIncrement(pastTurns.reverse())
     return scoreIncrement
   }
   
